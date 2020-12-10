@@ -296,7 +296,6 @@ a {
   display: block;
   width: 730px;
 }
-
 .download {
   top: 0;
   z-index: 20;
@@ -305,8 +304,7 @@ a {
   height: 285px;
   background: url(https://s2.music.126.net/style/web2/img/index/download.png?d88b3a45d5320accd0d4a7ddbf3c01c8);
 }
-
-.download-btn .download {
+.download,.download-btn:hover  {
   background: url(https://s2.music.126.net/style/web2/img/index/download.png?d88b3a45d5320accd0d4a7ddbf3c01c8);
 }
 
@@ -316,12 +314,10 @@ a {
   height: 56px;
   margin: 186px 0 0 19px;
   background-position: 0 9999px;
-  text-indent: -9999px;
 }
 
-.download .download-btn:hover {
+.download-btn:hover {
   background-position: 0 -290px;
-  text-decoration: none;
 }
 
 .download p {
@@ -570,16 +566,27 @@ a {
 
 .d-msk {
   position: absolute;
-  top: 23px;
+  top: 0px;
   width: 118px;
   height: 100px;
   background: url(https://s2.music.126.net/style/web2/img/coverall.png?759cd41f34edca1860f86d785f88bb91);
   background-position: 0 -570px;
 }
-
-.d-play:hover {
-  background: url(../img/index.png);
-  background-position: 0, -110px;
+.disk-dsc{
+  position: relative;
+}
+.d-play {
+  position: absolute;
+  background: url(https://s2.music.126.net/style/web2/img/iconall.png?99797f6be8965b9cbe79e62d91);
+  left: 80px;
+  top: 80px;
+  width: 22px;
+  height: 22px;
+  background-position: 0 -85px;
+  visibility: hidden;
+}
+.disk-dsc:hover .d-play{
+  visibility: visible;
 }
 
 .d-title {
@@ -670,6 +677,7 @@ a:hover {
 .r-uplist {
   height: 32px;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding-left: 20px;
 }
@@ -680,10 +688,37 @@ a:hover {
 }
 
 .up-name {
+  color: #000;
   padding-left: 10px;
   padding-bottom: 5px;
 }
+.h-btn{
 
+  background: url(../img/index.png);
+  width: 17px;
+  height: 17px;
+}
+.hover-btn{
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 82px;
+  visibility: hidden;
+}
+.r-uplist:hover .hover-btn{
+  visibility: visible;
+}
+.up-name-play{
+  background-position: -267px -268px
+}
+.up-name-add{
+  margin: 0 10px 0;
+  background: url(https://s2.music.126.net/style/web2/img/icon.png?5bedeef5dd763af947fab4fbd01b06f9);
+  background-position: 0 -700px;
+}
+.up-name-coll{
+  background-position: -297px -268px;
+}
 .small-model {
   margin-left: 20px;
 }
