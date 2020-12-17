@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
+  <link rel="shortcut icon" href="#">
   <link rel="stylesheet" href="css/myWYY.css" />
 </head>
 
@@ -790,7 +791,7 @@
   <!-- 音乐播放器 -->
   <div class="music-palyer">
     <audio id="palyer"></audio>
-    <div>
+    <div class="palyer-button" >
       <div class="palyer-spread"></div>
       <div class="bg">
         <div class="palyer-main">
@@ -832,8 +833,15 @@
               <a href="#" class="palyer-volume icn"></a>
               <a href="#" class="palyer-mode palyer-mode-default icn"></a>
               <div class="music-list">
-                <div class="music-list-title">播放列表</div>
-                <div class="music-list-name"></div>
+                <div class="music-list-title">播放列表( 
+                  <span class="music-num-1"></span>
+                  )
+                </div>
+                <div class="music-list-main">
+                  <ul class="music-list-name">
+                  </ul>
+                  <div class="music-list-right">歌词</div>
+                </div>
               </div>
               <span class="palyer-musiclist">
                 <a href="#" class="music-num">5</a>
@@ -851,5 +859,4 @@
   <script src="js/WYY.js"></script>
   <script src="js/music.js"></script>
 </body>
-
 </html>
